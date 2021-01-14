@@ -1,3 +1,18 @@
+<label>User Name</label>
+<input
+  type="text"
+  class="form-control"
+  [(ngModel)]="userName">
+<p>User Name: {{ userName }}</p>
+
+<button
+  class="btn btn-primary"
+  [disabled]="!userName"
+  (click)="onResetUserName()">
+  Reset UserName
+</button>
+
+<hr>
 <label>Server Name</label>
 <!-- <input
   type="text"
@@ -9,20 +24,6 @@
   [(ngModel)]="serverName">
 <p>Server Name: {{ serverName }}</p>
 
-
-<input
-  type="text"
-  class="form-control"
-  [(ngModel)]="userName">
-<p>Username: {{ userName }}</p>
-
-<button
-  class="btn btn-primary"
-  [disabled]="!userName"
-  (click)="onResetUserName()">
-  Reset UserName
-</button>
-
 <button 
   class="btn btn-primary" 
   [disabled]="!allowNewServer"
@@ -32,5 +33,6 @@
 <p>Allow New Server: {{ allowNewServer }} </p>
 <p>Server Creation Status: {{ serverCreationStatus }}</p>
 
+<hr>
 <app-server></app-server>
 <app-server></app-server>
