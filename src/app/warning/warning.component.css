@@ -1,4 +1,6 @@
 .warning {
-  width: 100%;
-  background-color: red;
+  padding: 2rem;
+  margin: 1rem;
+  background-color: mistyrose;
+  border: 1px solid red;
 }
