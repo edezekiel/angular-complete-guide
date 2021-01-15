@@ -33,5 +33,4 @@
 <p>Server Creation Status: {{ serverCreationStatus }}</p>
 
 <hr>
-<app-server></app-server>
-<app-server></app-server>
+<app-server *ngFor="let s of servers"></app-server>
