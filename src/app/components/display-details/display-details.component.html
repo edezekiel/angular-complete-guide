@@ -1,0 +1,8 @@
+<button (click)="toggleShowDetails($event)">{{ showDetails ? 'Hide' : 'Display'}} Details</button>
+<p *ngIf="showDetails">Secret Password: Pegasus</p>
+<ul>
+  <li 
+    *ngFor="let c of clickTimeStamps; let i = index"
+    [ngClass]="{'greater-than-fourth-timestamp': i > 3}">
+    {{ c }}</li>
+</ul>
