@@ -22,7 +22,7 @@
   type="text"
   class="form-control"
   [(ngModel)]="serverName">
-<p>Server Name: {{ serverName }}</p>
+<p *ngIf="serverCreated">Server Name: {{ serverName }}</p>
 
 <button 
   class="btn btn-primary" 
