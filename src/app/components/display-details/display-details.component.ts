@@ -14,7 +14,7 @@ export class DisplayDetailsComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  toggleShowDetails(e: any) {
+  toggleDetails(e: any) {
     this.showDetails = !this.showDetails;
     this.clickTimeStamps.push(e.timeStamp);
     console.log(this.clickTimeStamps);
