@@ -22,10 +22,7 @@
   type="text"
   class="form-control"
   [(ngModel)]="serverName">
-<p *ngIf="serverCreated; else noServer">Server Name: {{ serverName }}</p>
-<ng-template #noServer>
-  <p>No server was created!</p>
-</ng-template>
+<p *ngIf="serverCreated">Server Name: {{ serverName }}</p>
 <button 
   class="btn btn-primary" 
   [disabled]="!allowNewServer"
