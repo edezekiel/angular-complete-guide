@@ -12,7 +12,9 @@ export class DisplayDetailsComponent implements OnInit, OnChanges {
   constructor() { }
 
   ngOnChanges(changes) {
-    console.log('ngOnChanges Called, changes = ', changes)
+    if (changes) {
+      console.log('ngOnChanges Called, changes = ', changes)
+    }
   }
 
   ngOnInit(): void {
