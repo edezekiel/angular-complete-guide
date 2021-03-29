@@ -7,10 +7,12 @@ import { ServersComponent } from './components/servers/servers.component';
 import { WarningComponent } from './warning/warning.component';
 import { SuccessComponent } from './success/success.component';
 import { DisplayDetailsComponent } from './components/display-details/display-details.component';
+import { BasicHighlightDirective } from './directives/basic-highlight.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
+    BasicHighlightDirective,
     ServerComponent,
     ServersComponent,
     WarningComponent,
