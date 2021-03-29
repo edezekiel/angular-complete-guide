@@ -1,5 +1,5 @@
 <button (click)="toggleDetails($event)">{{ showDetails ? 'Hide' : 'Display'}} Details</button>
-<p *ngIf="showDetails">Secret Password: <span appBasicHighlight>Pegasus</span></p>
+<p *ngIf="showDetails">Secret Password: <span appBetterHighlight>Pegasus</span></p>
 <ul>
   <li 
     *ngFor="let c of clickTimeStamps; let i = index"

@@ -8,6 +8,7 @@ import { WarningComponent } from './warning/warning.component';
 import { SuccessComponent } from './success/success.component';
 import { DisplayDetailsComponent } from './components/display-details/display-details.component';
 import { BasicHighlightDirective } from './directives/basic-highlight.directive';
+import { BetterHighlightDirective } from './directives/better-highlight.directive';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { BasicHighlightDirective } from './directives/basic-highlight.directive'
     ServersComponent,
     WarningComponent,
     SuccessComponent,
-    DisplayDetailsComponent
+    DisplayDetailsComponent,
+    BetterHighlightDirective
   ],
   imports: [
     BrowserModule,
