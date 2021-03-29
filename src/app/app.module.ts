@@ -9,6 +9,7 @@ import { SuccessComponent } from './success/success.component';
 import { DisplayDetailsComponent } from './components/display-details/display-details.component';
 import { BasicHighlightDirective } from './directives/basic-highlight.directive';
 import { BetterHighlightDirective } from './directives/better-highlight.directive';
+import { UnlessDirective } from './directives/unless.directive';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { BetterHighlightDirective } from './directives/better-highlight.directiv
     WarningComponent,
     SuccessComponent,
     DisplayDetailsComponent,
-    BetterHighlightDirective
+    BetterHighlightDirective,
+    UnlessDirective
   ],
   imports: [
     BrowserModule,
